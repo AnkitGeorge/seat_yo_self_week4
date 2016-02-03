@@ -1,0 +1,4 @@
+<h2>Show all Reservations</h2>
+<% @reservations.each do |r| %>
+<p>  <%= r.time_slot %> <%= r.party_size %></p>
+<% end %>
