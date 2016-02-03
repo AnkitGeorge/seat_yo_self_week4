@@ -1,5 +1,7 @@
  Rails.application.routes.draw do
 
+  get 'users/index'
+
   resources :users
   resources :reservations
   resources :restaurants
