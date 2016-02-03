@@ -1,0 +1,12 @@
+<h3>Make a reservation</h3>
+  <%= form_for (@restaurant) do |r| %>
+    <div class="field">
+      <%= r.label :time_slot %>
+      <%= r.select :time_slot, @reservation.time_slot.map{|dt| [nice_datetime(dt), dt] } %>
+    </div>
+    <div class="field">
+      <%= r.label :party_size %>
+      <%= r.number_field :party_size, :value => 1, :min => 1 %>
+    </div>
+    <%= r.submit %>
+  <% end %>

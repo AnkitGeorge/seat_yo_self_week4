@@ -1,8 +1,10 @@
 class ReservationsController < ApplicationController
+  # This shows all reservations for the 'owner-user'
   def index
     @reservations = Reservation.all
   end
 
+  # Used to inspect a single reservation.
   def show
     @reservation = Reservation.find(params[:id])
   end
@@ -27,7 +29,7 @@ class ReservationsController < ApplicationController
   def create
     @reservation = Reservation.new(reservation_params)
     if @reservation.save
-      redirect_to reservations_path
+      redirect_to reservation_path(@reservation)
     else
       render :new
     end
@@ -42,7 +44,7 @@ class ReservationsController < ApplicationController
   private
 
   def reservation_params
-    params.require(:reservation).permit(:party_size, :time_slot)
+    params.require(:reservation).permit(:restaurant_id, :party_size, :time_slot)
   end
 
 end
