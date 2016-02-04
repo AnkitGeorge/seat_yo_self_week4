@@ -11,3 +11,7 @@
   </div>
   <div class="actions"><%= submit_tag "Log In" %></div>
 <% end %>
+
+<% if flash[:alert] %>
+  <p id="alert"><%= flash[:alert] %></p>
+<% end %>
