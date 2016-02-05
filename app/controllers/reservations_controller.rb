@@ -29,7 +29,7 @@ class ReservationsController < ApplicationController
   def create
     @reservation = Reservation.new(reservation_params)
     if @reservation.save
-      redirect_to restaurant_reservations_path
+      redirect_to restaurant_reservation_path(@reservation)
     else
       render :new
     end
