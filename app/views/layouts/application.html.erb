@@ -8,15 +8,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
+
   <body>
     <h1>Seat YoSelf</h1>
     <p> <% if current_user %>
       Welcome, <%= current_user.first_name %> <%= link_to image_tag("/images/rightarrow11.png"), session_path("current"), :method => :delete %>
     <% end %>
    </p>
+
   <%= yield %>
-
-
 
   <footer>
     <p>Contact Us | Placeholder</p>
