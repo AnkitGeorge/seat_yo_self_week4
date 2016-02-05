@@ -9,20 +9,39 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <h1>Seat YoSelf</h1>
-    <p> <% if current_user %>
-      Welcome, <%= current_user.first_name %> <%= link_to image_tag("/images/rightarrow11.png"), session_path("current"), :method => :delete %>
-    <% end %>
-   </p>
+  <div class = "page_wrapper">
 
-   
+    <h1>Seat YoSelf <img src="/images/knife39.png" alt="logo" id="logo"/></h1>
+      <p id = "current_user"> <% if current_user %>
+      Welcome, <%= current_user.first_name %> <%= link_to image_tag("/images/rightarrow11.png"), session_path("current"), :method => :delete %>
+      <% end %>
+     </p>
+
+
+  <div id="navigation">
+     <nav id="nav_bar">
+      <ul>
+
+        <li><%= link_to "Restaurants", restaurants_path %></li>
+
+      </ul>
+    </nav>
+  </div> <!--end navigation -->
+
   <%= yield %>
 
 
 
-  <footer>
-    <p>Contact Us | Placeholder</p>
-  </footer>
+    <div id="footer">
+      <p id= "connect">CONNECT WITH US!</p>
+      <p id= "social">
+        <button class="socialMedia" name="facebook"><img src="/images/facebook31.png" alt="Facebook" class="socialBtn"/></button>
+        <button class="socialMedia" name="insta"><img src="/images/photos12.png" alt="Instagram" class="socialBtn"/></button>
+        <button class="socialMedia" name="twitter"><img src="/images/twitter1.png" alt="Twitter" class="socialBtn"/></button></p>
+      <p id="copyright">&copy; LAM, 2015</p>
+    </div><!--end of footer-->
+
+    </div><!-- end of page wrapper -->
 
   </body>
 </html>
