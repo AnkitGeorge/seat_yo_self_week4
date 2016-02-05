@@ -25,6 +25,7 @@ html{
   font-size: 2.5rem;
   padding-left: 1.5%;
   margin-top: 0.5%;
+  padding-bottom: 2%;
 }
 
 #header img{
@@ -174,9 +175,36 @@ html{
   color: #363636;
   float: right;
   margin-top: -75px;
+  margin-right: 10%;
 
 }
 
-#current_user a{
+#logout{
+  width: 40%;
+  margin-left: 95%;
+  margin-top: -90px;
+}
+
+#all_restaurants{
+  padding-bottom: 20%;
+}
+
+#all_restaurants hr{
   width: 50%;
+}
+
+#all_restaurants p{
+  text-align: center;
+}
+
+#all_restaurants a, #all_restaurants a:visited{
+  text-decoration: none;
+	font-family: 'Raleway', cursive;
+	color: #363636;
+	font-size: 1.2rem;
+
+}
+
+#all_restaurants a:hover{
+  color: #ef2828;
 }

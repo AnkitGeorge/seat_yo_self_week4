@@ -1,4 +1,7 @@
-<h2>Show all</h2>
+<div id="all_restaurants">
+<h2>All Restaurants</h2>
 <% @restaurants.each do |r| %>
 <p>  <%= link_to r.name, restaurant_path(r) %> </p>
+<hr>
 <% end %>
+</div>

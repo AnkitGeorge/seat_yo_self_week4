@@ -13,9 +13,10 @@
   <div id="header">
     <h1>Seat YoSelf <img src="/images/knife39.png" alt="logo" id="logo"/></h1>
       <p id = "current_user"> <% if current_user %>
-      Welcome, <%= current_user.first_name %> <%= link_to image_tag("/images/rightarrow11.png"), session_path("current"), :method => :delete %>
+      Welcome, <%= current_user.first_name %>
       <% end %>
      </p>
+     <p id ="logout"><%= link_to image_tag("/images/logout20.png"), session_path("current"), :method => :delete %></p>
   </div><!--end header-->
 
 
