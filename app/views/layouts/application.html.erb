@@ -14,6 +14,8 @@
       Welcome, <%= current_user.first_name %> <%= link_to image_tag("/images/rightarrow11.png"), session_path("current"), :method => :delete %>
     <% end %>
    </p>
+
+   
   <%= yield %>
 
 
