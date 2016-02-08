@@ -1,5 +1,5 @@
 <!-- Shows a single restaurant and creates a reservation.  -->
-
+<div id="single-resto">
 <h2><%= @restaurant.name %></h2>
 <ul>
   <li><%= @restaurant.cuisine %></li>
@@ -10,13 +10,14 @@
 
 <h3>Make a reservation</h3>
   <%= form_for([@restaurant, @reservation]) do |r| %>
-    <div class="field">
+    <div class="reso_field">
       <%= r.label :time_slot %>
       <%= r.time_select :time_slot %>
     </div>
-    <div class="field">
+    <div class="reso_field">
       <%= r.label :party_size %>
       <%= r.number_field :party_size, :value => 1, :min => 1 %>
     </div>
-    <%= r.submit %>
+    <%= r.submit%>
   <% end %>
+</div>

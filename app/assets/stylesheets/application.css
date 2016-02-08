@@ -175,7 +175,7 @@ html{
   color: #363636;
   float: right;
   margin-top: -75px;
-  margin-right: 10%;
+  margin-right: 7%;
 
 }
 
@@ -207,4 +207,92 @@ html{
 
 #all_restaurants a:hover{
   color: #ef2828;
+}
+
+#single-resto ul{
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+#single-resto li{
+  font-family: 'Raleway', cursive;
+  color: #363636;
+  text-align: center;
+  padding-right: 3%;
+  padding-bottom: 1%;
+}
+
+#single-resto h3{
+  font-family: 'Lobster', cursive;
+  color: #ef2828;
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+.reso_field{
+  font-size: 1.2rem;
+  font-family:'Raleway', cursive;
+  color: #363636;
+  padding-bottom: 1%;
+  text-align: center;
+
+}
+form.new_reservation input[type='submit'] {
+  width: 25%;
+  font-family:'Raleway', cursive;
+  margin-left: 38%;
+  background-color:#ef2828;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 2%;
+}
+
+#show_reso ul{
+  list-style: none;
+  font-size: 1.2rem;
+}
+#show_reso li{
+  font-family: 'Raleway', cursive;
+  color: #363636;
+  text-align: center;
+  padding-right: 3%;
+  padding-bottom: 1%;
+}
+
+#show_reso{
+  padding-bottom: 12%;
+}
+
+#sign_up_form{
+  margin-left: 30%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  background-color: white;
+  opacity: 0.8;
+  width: 40%;
+}
+
+#user_password{
+  width:60%;
+  font-size: 1.2rem;
+
+}
+
+#user_password_confirmation{
+  width:60%;
+  font-size: 1.2rem;
+
+}
+
+form.new_user input[type='submit'] {
+  width: 50%;
+  font-family:'Raleway', cursive;
+  margin-left: 25%;
+  margin-top: 3%;
+  background-color:#ef2828;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+
 }
