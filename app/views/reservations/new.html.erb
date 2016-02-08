@@ -1,0 +1,12 @@
+<h3> Invalid reservation size. Max reservation size is <%= @restaurant.capacity %> </h3>>
+  <%= form_for([@restaurant, @reservation]) do |r| %>
+    <div class="field">
+      <%= r.label :time_slot %>
+      <%= r.time_select :time_slot %>
+    </div>
+    <div class="field">
+      <%= r.label :party_size %>
+      <%= r.number_field :party_size, :value => 1, :min => 1 %>
+    </div>
+    <%= r.submit %>
+  <% end %>
